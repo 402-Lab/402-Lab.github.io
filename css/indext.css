@@ -8,7 +8,8 @@ body {
 }
 
 .w-1 {
-    width: 780px;
+ /*   width: 780px; */
+    width: 1500px;
     margin: auto;
 }
 
