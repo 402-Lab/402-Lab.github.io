@@ -585,8 +585,8 @@ blockquote {
   }
   .information {
     width: auto !important;
-    margin-left: 4% !important;
-    argin-right: 4% !important;
+    margin-left: 1% !important;
+    argin-right: 1% !important;
   }
 }
 @media screen and (max-width: 450px) {
