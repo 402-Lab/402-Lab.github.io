@@ -80,15 +80,17 @@ h6 {
 }
 
 .students ul li {
-    width: 20%;
-    margin-right: 30px;
+    width: 20%; 
+      margin-right: 30px;
     margin-bottom: 30px;
 }
 
 .students ul li img {
     margin-bottom: 10px;
-    width: 128px;
-    border-radius: 50%;
+ /*   width: 128px; */
+    width: 640px;
+ /*       border-radius: 50%;  */ 
+    border-radius: 80%; 
 }
 
 .students ul li a {
