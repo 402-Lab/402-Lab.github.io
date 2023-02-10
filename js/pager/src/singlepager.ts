@@ -46,23 +46,23 @@ export default class Pager {
       // Take the specified element
       const shell = doc.querySelector(`[${this.config.shellMark}]`)
 
-      const scripts = Array.from(shell.getElementsByTagName('script'))
-        .filter((el: HTMLScriptElement) =>
-          (el.getAttribute('type') === null || el.getAttribute('type') === 'text/javascript')
-          && !el.hasAttribute(this.config.ignoreScript))
+//       const scripts = Array.from(shell.getElementsByTagName('script'))
+//         .filter((el: HTMLScriptElement) =>
+//           (el.getAttribute('type') === null || el.getAttribute('type') === 'text/javascript')
+//           && !el.hasAttribute(this.config.ignoreScript))
 
 
-      scripts.forEach(el => el.remove())
+//       scripts.forEach(el => el.remove())
 
-      const runBefore = scripts.filter(el => el.hasAttribute(this.config.runBefore))
-        .map(copyScriptTag)
-      const runAfter = scripts.filter(el => !el.hasAttribute(this.config.runBefore))
-        .map(copyScriptTag)
+//       const runBefore = scripts.filter(el => el.hasAttribute(this.config.runBefore))
+//         .map(copyScriptTag)
+//       const runAfter = scripts.filter(el => !el.hasAttribute(this.config.runBefore))
+//         .map(copyScriptTag)
 
-      runBefore.forEach(scr => this.shell.appendChild(scr))
+//       runBefore.forEach(scr => this.shell.appendChild(scr))
       window.requestAnimationFrame(() => {
         this.shell.innerHTML = shell.innerHTML
-        runAfter.forEach(scr => this.shell.appendChild(scr))
+//         runAfter.forEach(scr => this.shell.appendChild(scr))
         window.scrollTo(0, 0)
         window.document.title = newTitle
         callback && callback()
