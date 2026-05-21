@@ -1,0 +1,11 @@
+# IDE
+.idea/
+.vscode/
+
+# 备份文件
+*.original.*
+*.bak
+
+# 系统文件
+.DS_Store
+Thumbs.db
